@@ -4,7 +4,7 @@ from financing.src.domain.utils.sac_reports import SacReport
 
 
 def main():
-    st.title('Simulador de Financiamento PRICE')
+    st.title('Simulador de Financiamento SAC')
 
     valor_imovel = st.number_input(
         label='Valor do Imóvel',
@@ -14,7 +14,7 @@ def main():
         step=10000.0,
     )
 
-    taxa_juros = st.number_input('Taxa de Juros Anual (%)', min_value=0.10, max_value=100.0, step=1.0)
+    taxa_juros = st.number_input('Taxa de Juros anual (%)', min_value=0.10, max_value=100.0, step=1.0)
     parcelas = st.number_input('Parcelas', value=48, min_value=1, max_value=420, step=12)
 
     if st.button('Simular'):
