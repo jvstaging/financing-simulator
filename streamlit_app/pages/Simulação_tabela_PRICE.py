@@ -4,7 +4,7 @@ from financing.src.domain.utils.price_reports import PriceReport
 
 
 def main():
-    st.title('Simulador de Financiamento SAC')
+    st.title('Simulador de Financiamento PRICE')
 
     valor_imovel = st.number_input(
         label='Valor do Imóvel',
